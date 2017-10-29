@@ -1,0 +1,89 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 22%;
+  height: 500px;
+  margin: 1%;
+  display: inline-flex;
+  background-color: white;
+  overflow-wrap: normal;
+  box-shadow: 3px 1px 5px grey;
+}
+
+body {
+  background-color: #EFEFEF;
+  margin: 0;
+  font-family: sans-serif;
+  color: #717171;
+}
+
+div {
+  margin: 20px;
+  margin-left: 18px;
+  height: 15%;
+  width: 200%;
+  background-color: #EFEFEF;
+  /*font-size: 18px;*/
+  color: #B6B6B6;
+}
+
+img {
+  /*margin: 0;*/
+}
+
+.num {
+  color: #049FE0;
+  position: relative;
+  margin-top: 1.5em;
+  font-size: 40px;
+}
+
+.header {
+  height: 5em;
+  text-align: right;
+  border: solid black;
+  font-size: 2em;
+  background-color: #2B2B2B;
+  display: flex;
+  align-items: flex-end;
+}
+
+.admin-nav {
+  position: absolute;
+  margin-left: 90%;
+  display: flex;
+}
+
+p {
+  font-size: 30px;
+}
+
+span {
+  float: left;
+  font-size: 20px;
+  color: #8D8D8D;
+  margin: 15px;
+}
+
+.admin {
+  margin: 10px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #049FE0;
+}
+
+.logo {
+  margin-left: 68%;
+  font-size: 60px;
+  color: #FDFDFD;
+}
+
+.shares {
+  margin-left: 15px;
+  color: #525252;
+}
+
+hero {
+  margin-bottom: 50px;
+}

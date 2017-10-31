@@ -1,13 +1,66 @@
-.card {
+
+.main {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 22%;
-  height: 500px;
-  margin: 1%;
-  display: inline-flex;
+}
+
+.card {
+  width: 350px;
+  min-width: 250px;
+  height: auto;
+  margin-bottom: 1%;
+  margin-left: 0;
   background-color: white;
   overflow-wrap: normal;
   box-shadow: 3px 1px 5px grey;
+  padding-bottom: 30px;
+}
+
+.url {
+  height: 45px;
+  width: 90%;
+  background-color: #EFEFEF;
+  color: #A8A8A8;
+  padding: 10px;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-image: url(image/serena.jpg);
+  /*opacity: 0.6;*/
+  /*filter: brightness(70%);*/
+  background-size: cover;
+  height: 160px;
+  width: 100%;
+  text-align: right;
+}
+
+.num-views {
+  color: white;
+}
+
+.number-views {
+  font-size: 30px;
+  margin: 5px 15px;
+}
+
+.views {
+  margin: 10px 11px ;
+}
+
+.arrow {
+  margin: 10px 0 0px 15px;
+  width: 50px;
+  height: 50PX;
+}
+
+.bottom {
+  padding-left: 15px;
 }
 
 body {
@@ -17,16 +70,6 @@ body {
   color: #717171;
 }
 
-div {
-  margin: 20px;
-  margin-left: 18px;
-  height: 15%;
-  width: 200%;
-  background-color: #EFEFEF;
-  /*font-size: 18px;*/
-  color: #B6B6B6;
-}
-
 img {
   /*margin: 0;*/
 }
@@ -34,28 +77,130 @@ img {
 .num {
   color: #049FE0;
   position: relative;
-  margin-top: 1.5em;
+  margin: 0;
   font-size: 40px;
+  padding-top: 3px;
 }
 
-.header {
-  height: 5em;
-  text-align: right;
-  border: solid black;
-  font-size: 2em;
-  background-color: #2B2B2B;
+header {
   display: flex;
+  flex-direction: column-reverse;
+  background: #2B2B2B;
+  justify-content: space-around;
+}
+
+.nav-list-wrapper {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
   align-items: flex-end;
+  order: -1;
 }
 
 .admin-nav {
-  position: absolute;
-  margin-left: 90%;
-  display: flex;
+  align-self: flex-end;
+  padding-top: 10px;
+}
+
+.admin {
+  text-align: right;
+  width: 215px;
+  font-size: 16px;
+  color: #049FE0;
+}
+
+.logo {
+  align-self: flex-end;
+  font-size: 60px;
+  color: #FDFDFD;
+}
+
+.nav-list {
+  flex: 4;
+  display: inline-block;
+  text-align: left;
+}
+
+.nav-list li {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 50px;
+  margin-left: -50px;
+  font-weight: lighter;
+}
+
+.links {
+  font-size: 24px;
+  text-align: center;
+}
+
+.other {
+  color: white
+}
+
+.share {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.playlist {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.personal {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+  color: #039AD8;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.name {
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: black;
+}
+
+h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 17px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+h6 {
+  margin-top: 0;
+  color: #CACBCC;
 }
 
 p {
-  font-size: 30px;
+  font-size: 17px;
+  margin: 0;
 }
 
 span {
@@ -65,25 +210,341 @@ span {
   margin: 15px;
 }
 
+.down-arrow {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  }
+
+.shares {
+  margin: 35px 15px 33px;
+  color: #525252;
+  font-size: 40px;
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+ header {
+  width: 100%;
+ }
+
+ .nav-list {
+  flex: 4;
+  display: inline-block;
+  text-align: left;
+}
+
+ul.nav-list {
+  padding-left: 10px;
+}
+
+.nav-list li {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 0;
+  margin: 10px 0;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+.admin-nav {
+  align-self: flex-start;
+  padding-top: 10px;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
 .admin {
-  margin: 10px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  font-size: 18px;
+  text-align: right;
+  font-size: 16px;
   color: #049FE0;
 }
 
+span.admin {
+  margin: 0;
+}
+
 .logo {
-  margin-left: 68%;
+  text-align: center;
   font-size: 60px;
   color: #FDFDFD;
+  margin-bottom: 140px;
 }
 
-.shares {
-  margin-left: 15px;
-  color: #525252;
+.card {
+  width: 90%;
+  min-width: 250px;
+  height: auto;
+  margin-bottom: 3%;
+  margin-left: 0;
+  background-color: white;
+  overflow-wrap: normal;
+  box-shadow: 3px 1px 5px grey;
+  padding-bottom: 30px;
 }
 
-hero {
-  margin-bottom: 50px;
+ /*.nav-list-wrapper {
+  height: 400px;
+  width: 101%;
+  text-align: left;
+  margin-right: 0;
+ } 
+
+ .nav-list {
+  width: 200px;
+  margin-bottom: 60px;
+ }
+
+ .links {
+  font-size: 60px;
+  padding: 10px;
+  padding-left: 0;
+  width: 700px;
+ }
+
+ .share {
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+ }
+
+ .card {
+  width: 80%;
+  height: 800px;
+  font-size: 50px;
+  padding-bottom: 200px;
+  margin-bottom: 80px;
+ }
+
+ p {
+  font-size: 60px;
+  margin-right: 20px;
+ }
+
+ .num {
+  font-size: 90px;
+ }
+
+ .bottom {
+  height: 50%;
+ }
+
+ .top {
+  height: 50%;
+ }
+
+ .logo {
+  margin-bottom: 150px;
+  font-size: 130px;
+  }
+
+  .icon {
+    width: 120px;
+    height: 120px;
+    margin-right: 60px
+  }
+
+  .admin-nav {
+    margin: auto;
+    margin-left: 60%;
+    width: 400px;
+  }
+
+  .admin {
+    font-size: 30px;
+    width: 400px;
+  }
+
+  .shares {
+    font-size: 70px;
+    margin-left: 50px;
+  }
+
+  h6 {
+    margin-bottom: 35px;
+  }
+
+  .url {
+    margin-bottom: 35px;
+    margin-left: 30px;
+  }
+
+  .arrow {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+  }
+
+  .num-views {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-right: 15px;
+  }
+
+  .views {
+    font-size: 40px;
+    margin: 25px 25px 10px 0;
+  }
+
+  .number-views {
+    font-size: 80px;
+    margin: 10px 30px;
+  }
+}*/
+
+/*@media only screen and (max-width: 850px) {
+
+  .nav-list-wrapper {
+  height: 400px;
+  width: 101%;
+  text-align: left;
+  margin-right: 0;
+ } 
+
+ .nav-list {
+  width: 150px;
+  margin-bottom: 60px;
+ }
+
+ .links {
+  font-size: 30px;
+  padding: 10px;
+  padding-left: 0;
+  width: 700px;
+ }
+
+ .share {
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+ }
+
+ .card {
+  width: 80%;
+  height: 800px;
+  font-size: 50px;
+  padding-bottom: 200px;
+  margin-bottom: 80px;
+ }
+
+ p {
+  font-size: 60px;
+  margin-right: 20px;
+ }
+
+ .num {
+  font-size: 90px;
+ }
+
+ .bottom {
+  height: 50%;
+ }
+
+ .top {
+  height: 50%;
+ }
+
+ .logo {
+  margin-bottom: 140px;
+  font-size: 80px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+  }
+
+  .admin-nav {
+    margin: auto;
+    margin-left: 40%;
+    margin-right: 110px;
+    width: 400px;
+  }
+
+  .admin {
+    font-size: 25px;
+    width: 400px;
+  }
+
+  .shares {
+    font-size: 70px;
+    margin-left: 50px;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-left: 12px;
+    font-size: 50px;
+  }
+
+  h4 {
+    font-size: 34px;
+    padding-left: 13px;
+    font-weight: 400;
+  }
+
+  h5 {
+    margin-left: 15px;
+    font-size: 30px;
+  }
+
+  h6 {
+    margin-bottom: 35px;
+    font-size: 30px;
+    margin-left: 15px;
+    font-weight: 400;
+  }
+
+  .num {
+    padding-left: 11px;
+    padding-top: 0;
+  }
+
+  .url {
+    padding-top: 30px;
+    padding-left: 15px;
+    margin-bottom: 35px;
+    width: 89%;
+    margin-left: 15px;
+    height: 80px;
+    font-size: 34px;
+  }
+
+  .arrow {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+  }
+
+  .num-views {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-right: 15px;
+  }
+
+  .views {
+    font-size: 40px;
+    margin: 25px 25px 10px 0;
+  }
+
+  .number-views {
+    font-size: 80px;
+    margin: 10px 30px;
+  }
 }
+}
+
+@media only screen and (max-width: 1200px min-width: 850px) {
+
+  .admin-nav {
+    margin-left: 50%;
+  }
+
+}*/
